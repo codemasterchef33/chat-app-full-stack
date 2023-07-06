@@ -1,0 +1,88 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.centered-form__box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.centered-form h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #5a7092;
+}
+
+hr {
+  border-color: #ccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  width: 80px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.logout-div {
+  margin-top: 10px;
+}
+
+.fa-sign-out {
+  font-size: 15px;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.fa-sign-out:hover {
+  transform: scale(1.05);
+}
+
+.msg-chat {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  overflow-y: auto;
+}

@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .input-div {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container .input-div:before,
+.container .input-div:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #38d39f;
+  transition: 0.3s;
+}
+
+.container .input-div:before {
+  right: 50%;
+}
+
+.container .input-div:after {
+  left: 50%;
+}
+
+.container .input-div.focus:before,
+.container .input-div.focus:after {
+  width: 50%;
+}
+
+.container .input-div.focus .i i {
+  color: #38d39f;
+}
+
+.container .input-div.focus .input {
+  color: #333;
+}
+
+.container .input-div .i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.container .input-div .i i {
+  color: #d9d9d9;
+}
+
+.container .input-div .input {
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #888;
+  transition: 0.3s;
+}
+
+.container .input-div .input::placeholder {
+  color: #d9d9d9;
+}
+
+.container .new-user {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.container .btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: #38d39f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .btn:hover {
+  background-color: #32c48d;
+}
+
+.container a {
+  color: #38d39f;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.container a:hover {
+  color: #32c48d;
+}
